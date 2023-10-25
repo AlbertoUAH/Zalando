@@ -38,3 +38,20 @@ The goal of this exercise is to understand the dataset and experiment with deep 
 
 2. Image size: __28x28__
 3. Image type: __grayscale image__
+4. Label distribution: although original labels are balanced for both labels, new labels are unbalanced:
+
+```
+# -- Train data
+Upper part     24000
+Footwear       18000
+One piece       6000
+Bottom part     6000
+Bags            6000
+
+# -- Test data
+Upper part     4000
+Footwear       3000
+Bottom part    1000
+One piece      1000
+Bags           1000
+```

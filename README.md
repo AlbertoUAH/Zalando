@@ -55,3 +55,9 @@ Bottom part    1000
 One piece      1000
 Bags           1000
 ```
+
+5. Pixels distribution
+* Min value: 0
+* Max value: 255
+
+

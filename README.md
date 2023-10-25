@@ -28,3 +28,13 @@ In this case, we want to group the original labels in 5 new labels with the foll
 
 
 The goal of this exercise is to understand the dataset and experiment with deep learning techniques to train a classifier for the given grouped classes (Upper part, Bottom Part, One piece, Footwear and Bags).
+
+## Data Understanding and Exploratory Data Analysis (EDA)
+
+1. Fashion-MNIST is a dataset of Zalando's article images—consisting of:
+* __A training set of 60,000 examples__
+* __A test set of 10,000 examples__
+* It shares the same image size and structure of training and testing splits.
+
+2. Image size: __28x28__
+3. Image type: __grayscale image__

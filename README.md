@@ -88,5 +88,5 @@ Both datasets have an identical distribution (important note for train-validatio
 Let’s imagine that now you have to load the product images from our database along with some additional text features like the product description provided by the retailers. The data is stored in an SQL relational database (postgresql) with the following schema:
 
 <p align="center">
-         <img width="450" src="./media/sql_database_schema.PNG">
+         <img width="450" src="./media/sql_database_schema.png">
 </p>

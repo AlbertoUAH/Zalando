@@ -38,7 +38,8 @@ The goal of this exercise is to understand the dataset and experiment with deep 
 
 2. Image size: __28x28__
 3. Image type: __grayscale image__
-4. Label distribution: although original labels are balanced for both labels, new labels are unbalanced:
+4. Duplicated images: __no__
+5. Label distribution: although original labels are balanced for both labels, new labels are unbalanced:
 
 ```
 # -- Train data
@@ -58,17 +59,17 @@ Bags           1000 -> (Represents 10 % of training data)
 
 Both datasets have an identical distribution (important note for train-validation split) 
 
-5. Pixels distribution
+6. Pixels distribution
 * Min value: 0
 * Max value: 255
 
-5.1. Average pixel distribution per group
+6.1. Average pixel distribution per group
 
 <p align="center">
          <img width="450" src="./media/avg_pixel_value_per_class.png">
 </p>
 
-5.2. Median pixel distribution per group
+6.2. Median pixel distribution per group
 
 <p align="center">
          <img width="450" src="./media/median_pixel_value_per_class.png">

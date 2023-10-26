@@ -75,4 +75,18 @@ Both datasets have an identical distribution (important note for train-validatio
          <img width="450" src="./media/median_pixel_value_per_class.png">
 </p>
 
+## Deep Learning Experimentation and Metrics
 
+1. Standarization
+
+2. Train/validation split
+
+## CI/CD Deployment plan
+
+## SQL Relational Database
+
+Let’s imagine that now you have to load the product images from our database along with some additional text features like the product description provided by the retailers. The data is stored in an SQL relational database (postgresql) with the following schema:
+
+<p align="center">
+         <img width="450" src="./media/sql_database_schema.PNG">
+</p>

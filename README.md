@@ -1,9 +1,9 @@
 # Zalando
 Automatic classification of fashion images (by [Zalando](https://github.com/zalandoresearch/fashion-mnist)) via Deep Learning
 
-<div style="text-align: center;">
+<p align="center">
          <img width="450" src="./media/fashion-mnist-sprite.png">
-</div>
+</p>
 
 ## Description and objective
 
@@ -59,5 +59,17 @@ Bags           1000
 5. Pixels distribution
 * Min value: 0
 * Max value: 255
+
+5.1. Average pixel distribution per group
+
+<p align="center">
+         <img width="450" src="./media/avg_pixel_value_per_class.png">
+</p>
+
+5.2. Median pixel distribution per group
+
+<p align="center">
+         <img width="450" src="./media/median_pixel_value_per_class.png">
+</p>
 
 

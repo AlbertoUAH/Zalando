@@ -42,19 +42,21 @@ The goal of this exercise is to understand the dataset and experiment with deep 
 
 ```
 # -- Train data
-Upper part     24000
-Footwear       18000
-One piece       6000
-Bottom part     6000
-Bags            6000
+Upper part     24000 -> (Represents 40 % of training data)
+Footwear       18000 -> (Represents 30 % of training data)
+One piece       6000 -> (Represents 10 % of training data)
+Bottom part     6000 -> (Represents 10 % of training data)
+Bags            6000 -> (Represents 10 % of training data)
 
 # -- Test data
-Upper part     4000
-Footwear       3000
-Bottom part    1000
-One piece      1000
-Bags           1000
+Upper part     4000 -> (Represents 40 % of training data)
+Footwear       3000 -> (Represents 30 % of training data)
+Bottom part    1000 -> (Represents 10 % of training data)
+One piece      1000 -> (Represents 10 % of training data)
+Bags           1000 -> (Represents 10 % of training data)
 ```
+
+Both datasets have an identical distribution (important note for train-validation split) 
 
 5. Pixels distribution
 * Min value: 0

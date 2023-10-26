@@ -90,3 +90,21 @@ Let’s imagine that now you have to load the product images from our database a
 <p align="center">
          <img width="450" src="./media/sql_database_schema.png">
 </p>
+
+Write a query (either in django ORM or in SQL) to extract, for every existing product, the following fields:
+* Product. Title
+* Image. Url for the images with the ImageIndex = 0. _ImageIndex field states the priority order of images of a certain product. So for a given ProductId, the image with ImageIndex = 0 would be the most relevant image for that product_
+* ProductDescription. TranslatedText if exists, else ProductDescription.OriginalText for ProductDescriptions in CountryCode = ‘us’
+
+```
+SELECT Product.Title AS ProductTitle,
+       Image.Url AS ImageURL,
+       CASE
+         WHEN ProductDescription.TranslatedText IS NOT NULL THEN ProductDescription.TranslatedText
+         ELSE ProductDescription.OriginalText
+       END AS ProductDescriptionText
+FROM Product LEFT JOIN ProductImages ON Product.Id = ProductImages.ProductId
+             LEFT JOIN ProductDescription ON Product.Id = ProductDescription.Id
+             LEFT JOIN Image ON Product.Id = Image.Id
+WHERE ProductImages.ImageIndex = 0
+```

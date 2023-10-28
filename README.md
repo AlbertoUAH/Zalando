@@ -81,6 +81,19 @@ Both datasets have an identical distribution (important note for train-validatio
 
 2. Train/validation split
 
+### Experimentation
+
+#### MobileNetV2 
+
+|                  | recall | precision | negative predicted value | model | model size |
+|------------------|-------|-----------|--------------------------| ------ |
+| Upper part       | 0.91  | 0.96      | 0.94                     | * MobileNetV2 baseline (no img aug) |
+| Bottom part      | 0.96  | 0.97      | 1.0                      | * MobileNetV2 baseline (no img aug) |
+| One piece        | 0.88  | 0.73      | 0.99                     | * MobileNetV2 baseline (no img aug) |
+| Footwear         | 0.99  | 0.99      | 1.0                      | * MobileNetV2 baseline (no img aug) |
+| Bags             | 0.96  | 0.92      | 1.0                      | * MobileNetV2 baseline (no img aug) |
+
+
 ## CI/CD Deployment plan
 
 ## SQL Relational Database

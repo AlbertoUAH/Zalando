@@ -5,6 +5,25 @@ Automatic classification of fashion images (by [Zalando](https://github.com/zala
          <img width="450" src="./media/fashion-mnist-sprite.png">
 </p>
 
+- [Zalando](#zalando)
+  * [Description and objective](#description-and-objective)
+  * [Data Understanding and Exploratory Data Analysis (EDA)](#data-understanding-and-exploratory-data-analysis--eda-)
+  * [Deep Learning Experimentation and Metrics](#deep-learning-experimentation-and-metrics)
+    + [Train-Validation Split](#train-validation-split)
+    + [Standarize Features](#standarize-features)
+    + [Image Resizing](#image-resizing)
+    + [Experimentation](#experimentation)
+    + [Evaluation metrics](#evaluation-metrics)
+      - [Classical Metrics](#classical-metrics)
+    + [Performance Metrics](#performance-metrics)
+    + [Resource Consumption Metrics](#resource-consumption-metrics)
+  * [Conclusions](#conclusions)
+  * [CI/CD Deployment plan](#ci-cd-deployment-plan)
+  * [SQL Relational Database](#sql-relational-database)
+  * [References](#references)
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
 ## Description and objective
 
 The original Zalando dataset contains 10 different labels:
@@ -128,7 +147,7 @@ __NOTE__: The choice to use recall and precision separately (as opposed to the F
 |------------------|-------|-----------|--------------------------| -------- |
 | Bottom part      | 0.96  | 0.97      | 1.0                      | MobileNetV2 baseline (no img aug) - frozen layers |
 |     | 0.94  | 0.95      | 0.99                      | MobileNetV2 baseline (best img aug) - frozen layers |
-|       | __0.99__  | __0.99__      | __1.0__                      | MobileNetV2 baseline (no img aug) - non frozen layers |
+|       | <u> __0.99__ <u>  | <u> __0.99__ <u>      | <u> __1.0__ <u>                      | MobileNetV2 baseline (no img aug) - non frozen layers |
 |       | 0.97  | 0.98      | 1.0                      | SqueezeNet1.1 baseline (no img aug) - non frozen layers |
 
 |                  | recall | precision | negative predicted value | model |

@@ -1,6 +1,9 @@
 # CI/CD and deployment plan for the final model, in a cloud based production environment
 
-![image](media/mlops-schema.png)
+<p align="center">
+         <img width="350" src="media/mlops-schema.png">
+</p>
+
 
 The deployment plan consists of classifying clothes images into groups, automatically. To do so, I must review the activities mostly revolved around:
 

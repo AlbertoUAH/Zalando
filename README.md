@@ -203,9 +203,9 @@ Based on previous metrics, if the main goal is to correctly classify all groups 
 
 ## Future lines of research
 
-1. Review "One Piece" Mispredictions
-2. Create a Custom Convolutional Model: it provides flexibility and control over the model's architecture
-3. Use Deeper Approaches (e.g., ResNet): deeper architectures are capable of capturing more complex features and patterns, potentially leading to enhanced accuracy
+1. __Review "One Piece" Mispredictions__
+2. __Create a Custom Convolutional Model__: it provides flexibility and control over the model's architecture
+3. __Use Deeper Approaches__ (e.g., ResNet): deeper architectures are capable of capturing more complex features and patterns, potentially leading to enhanced accuracy
 
 
 ## CI/CD Deployment plan

@@ -85,13 +85,38 @@ Both datasets have an identical distribution (important note for train-validatio
 
 #### MobileNetV2 
 
-|                  | recall | precision | negative predicted value | model | model size |
-|------------------|-------|-----------|--------------------------| ------ |
-| Upper part       | 0.91  | 0.96      | 0.94                     | * MobileNetV2 baseline (no img aug) |
-| Bottom part      | 0.96  | 0.97      | 1.0                      | * MobileNetV2 baseline (no img aug) |
-| One piece        | 0.88  | 0.73      | 0.99                     | * MobileNetV2 baseline (no img aug) |
-| Footwear         | 0.99  | 0.99      | 1.0                      | * MobileNetV2 baseline (no img aug) |
-| Bags             | 0.96  | 0.92      | 1.0                      | * MobileNetV2 baseline (no img aug) |
+|                  | recall | precision | negative predicted value | model |
+|------------------|-------|-----------|--------------------------| -------- |
+| Upper part       | __0.91__  | __0.96__      | __0.94__                     | MobileNetV2 baseline (no img aug) - frozen layers |
+| Upper part       | 0.89  | 0.94      | 0.93                     | MobileNetV2 baseline (best img aug) - frozen layers |
+
+|                  | recall | precision | negative predicted value | model |
+|------------------|-------|-----------|--------------------------| -------- |
+| Bottom part      | __0.96__  | __0.97__      | __1.0__                      | MobileNetV2 baseline (no img aug) - frozen layers |
+| Bottom part      | 0.94  | 0.95      | 0.99                      | MobileNetV2 baseline (best img aug) - frozen layers |
+
+|                  | recall | precision | negative predicted value | model |
+|------------------|-------|-----------|--------------------------| -------- |
+| One piece        | __0.88__  | __0.73__      | __0.99__                     | MobileNetV2 baseline (no img aug) - frozen layers |
+| One piece        | 0.8  | 0.67      | 0.98                     | MobileNetV2 baseline (best img aug) - frozen layers |
+
+|                  | recall | precision | negative predicted value | model |
+|------------------|-------|-----------|--------------------------| -------- |
+| Footwear         | __0.99__  | __0.99__      | __1.0__                      | MobileNetV2 baseline (no img aug) - frozen layers |
+| Footwear         | 0.98  | 0.99      | 0.99                      | MobileNetV2 baseline (best img aug) - frozen layers |
+
+|                  | recall | precision | negative predicted value | model |
+|------------------|-------|-----------|--------------------------| -------- |
+| Bags             | __0.96__  | __0.92__      | __1.0__                      | MobileNetV2 baseline (no img aug) - frozen layers |
+| Bags             | 0.92  | 0.89      | 0.99                      | MobileNetV2 baseline (best img aug) - frozen layers |
+
+* __Baseline model achieves better results__
+
+* __Performance with best MobileNetV2 (no image augmentation + frozen layers)__
+
+|                  | number of parameters | model size (MB) | test inference time (seconds) |
+|------------------|-------|-----------|--------------------------|
+| | 2230277 | 8.8 MB | 37.6 sec |
 
 
 ## CI/CD Deployment plan

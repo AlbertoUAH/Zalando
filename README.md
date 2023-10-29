@@ -5,7 +5,7 @@ Automatic classification of fashion images (by [Zalando](https://github.com/zala
          <img width="450" src="./media/fashion-mnist-sprite.png">
 </p>
 
-- [Zalando](#zalando)
+- Table of contents
   * [Description and objective](#description-and-objective)
   * [Data Understanding and Exploratory Data Analysis (EDA)](#data-understanding-and-exploratory-data-analysis--eda-)
   * [Deep Learning Experimentation and Metrics](#deep-learning-experimentation-and-metrics)
@@ -22,7 +22,6 @@ Automatic classification of fashion images (by [Zalando](https://github.com/zala
   * [SQL Relational Database](#sql-relational-database)
   * [References](#references)
 
-<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
 ## Description and objective
 
@@ -100,7 +99,7 @@ In this part, I will outline the key steps involved in the experimentation proce
 
 ### Train-Validation Split
 
-One of the fundamental steps in training a machine learning or deep learning model is to divide the available dataset into two distinct subsets: the training set and the validation set. This split is essential for evaluating the model's performance and preventing overfitting. The split ratio is 80% for training and 20% for validation.
+One of the fundamental steps in training a machine learning or deep learning model is to divide the available dataset into two distinct subsets: the training set and the validation set. This split is essential for evaluating the model's performance and preventing overfitting. The split ratio is 80% for training and 20% for validation, __stratified by label column__.
 
 ### Standarize Features
 
@@ -147,7 +146,7 @@ __NOTE__: The choice to use recall and precision separately (as opposed to the F
 |------------------|-------|-----------|--------------------------| -------- |
 | Bottom part      | 0.96  | 0.97      | 1.0                      | MobileNetV2 baseline (no img aug) - frozen layers |
 |     | 0.94  | 0.95      | 0.99                      | MobileNetV2 baseline (best img aug) - frozen layers |
-|       | <u> __0.99__ <u>  | <u> __0.99__ <u>      | <u> __1.0__ <u>                      | MobileNetV2 baseline (no img aug) - non frozen layers |
+|<font color="red">       | __0.99__  | __0.99__      | __1.0__                      | MobileNetV2 baseline (no img aug) - non frozen layers |</font>
 |       | 0.97  | 0.98      | 1.0                      | SqueezeNet1.1 baseline (no img aug) - non frozen layers |
 
 |                  | recall | precision | negative predicted value | model |

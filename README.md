@@ -199,6 +199,15 @@ Evaluating resource consumption metrics is essential for optimizing hardware res
 
 ## Conclusions
 
+Based on previous metrics, if the main goal is to correctly classify all groups at any cost, regardless the model size or its complexity, __MobileNetV2 baseline (no img aug) - non frozen layers__ is the best option. Specifically, this model achieve good results with "One Piece" group, increasing its precision to 86 % on test set.
+
+## Future lines of research
+
+1. Review "One Piece" Mispredictions
+2. Create a Custom Convolutional Model: it provides flexibility and control over the model's architecture
+3. Use Deeper Approaches (e.g., ResNet): deeper architectures are capable of capturing more complex features and patterns, potentially leading to enhanced accuracy
+
+
 ## CI/CD Deployment plan
 
 Find attached in [MLOps & Database README file](https://github.com/AlbertoUAH/Zalando/blob/main/MLOps%20%26%20Database.md)

@@ -84,53 +84,49 @@ Both datasets have an identical distribution (important note for train-validatio
 ### Experimentation
 
 #### MobileNetV2 
+<span style="color:blue">some *blue* text</span>.
 
 |                  | recall | precision | negative predicted value | model |
 |------------------|-------|-----------|--------------------------| -------- |
 | Upper part       | 0.91  | 0.96      | 0.94                     | MobileNetV2 baseline (no img aug) - frozen layers |
 |        | 0.89  | 0.94      | 0.93                     | MobileNetV2 baseline (best img aug) - frozen layers |
 |        | __0.96__  | __0.99__     | __0.97__                     | MobileNetV2 baseline (no img aug) - non frozen layers |
+|        | 0.94  | 0.97     | 0.96                     | SqueezeNet1.1 baseline (no img aug) - non frozen layers |
 
 |                  | recall | precision | negative predicted value | model |
 |------------------|-------|-----------|--------------------------| -------- |
 | Bottom part      | 0.96  | 0.97      | 1.0                      | MobileNetV2 baseline (no img aug) - frozen layers |
 |     | 0.94  | 0.95      | 0.99                      | MobileNetV2 baseline (best img aug) - frozen layers |
 |       | __0.99__  | __0.99__      | __1.0__                      | MobileNetV2 baseline (no img aug) - non frozen layers |
+|       | 0.97  | 0.98      | 1.0                      | SqueezeNet1.1 baseline (no img aug) - non frozen layers |
 
 |                  | recall | precision | negative predicted value | model |
 |------------------|-------|-----------|--------------------------| -------- |
 | One piece        | 0.88  | 0.73      | 0.99                     | MobileNetV2 baseline (no img aug) - frozen layers |
 |        | 0.8  | 0.67      | 0.98                     | MobileNetV2 baseline (best img aug) - frozen layers |
 |        | __0.96__  | __0.86__      | __1.0__                     | MobileNetV2 baseline (no img aug) - non frozen layers |
+|       | 0.89  | 0.81      | 0.99                      | SqueezeNet1.1 baseline (no img aug) - non frozen layers |
 
 |                  | recall | precision | negative predicted value | model |
 |------------------|-------|-----------|--------------------------| -------- |
 | Footwear         | 0.99  | 0.99      | 1.0                      | MobileNetV2 baseline (no img aug) - frozen layers |
 |         | 0.98  | 0.99      | 0.99                      | MobileNetV2 baseline (best img aug) - frozen layers |
 |         | __1.0__  | __1.0__      | __1.0__                      | MobileNetV2 baseline (no img aug) - non frozen layers |
+|       | 1.0  | 1.0      | 1.0                      | SqueezeNet1.1 baseline (no img aug) - non frozen layers |
 
 |                  | recall | precision | negative predicted value | model |
 |------------------|-------|-----------|--------------------------| -------- |
 | Bags             | 0.96  | 0.92      | 1.0                      | MobileNetV2 baseline (no img aug) - frozen layers |
 |             | 0.92  | 0.89      | 0.99                      | MobileNetV2 baseline (best img aug) - frozen layers |
 |             | __0.99__  | __0.99__      | __1.0__                      | MobileNetV2 baseline (no img aug) - non frozen layers |
+|       | 0.98  | 0.94      | 1.0                      | SqueezeNet1.1 baseline (no img aug) - non frozen layers |
 
-* __Baseline model achieves better results__
-
-* __Performance with best MobileNetV2 (no image augmentation + frozen layers)__
 
 |                  | number of parameters | model size (MB) | test inference time (seconds) |
 |------------------|-------|-----------|--------------------------|
 | MobilenetV2 - baseline | 2230277 | 8.8 MB | 37.6 sec |
 | MobilenetV2 - baseline - no frozen layers | 2230277 | 8.8 MB | 37.3 sec |
-
-* __Baseline model achieves better results__
-
-* __Performance with best MobileNetV2 (no image augmentation + frozen layers)__
-
-|                  | number of parameters | model size (MB) | test inference time (seconds) |
-|------------------|-------|-----------|--------------------------|
-| | 2230277 | 8.8 MB | 37.6 sec |
+| SqueezeNet1.1 baseline (no img aug) - non frozen layers | 855109 | 3.3 MB | 35.7 sec |
 
 
 ## CI/CD Deployment plan

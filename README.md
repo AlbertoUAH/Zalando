@@ -18,8 +18,7 @@ Automatic classification of fashion images (by [Zalando](https://github.com/zala
     + [Performance Metrics](#performance-metrics)
     + [Resource Consumption Metrics](#resource-consumption-metrics)
   * [Conclusions](#conclusions)
-  * [CI/CD Deployment plan](#ci-cd-deployment-plan)
-  * [SQL Relational Database](#sql-relational-database)
+  * [CI/CD Deployment plan and Database](#ci-cd-deployment-plan)
   * [References](#references)
 
 
@@ -208,35 +207,9 @@ Based on previous metrics, if the main goal is to correctly classify all groups 
 3. __Use Deeper Approaches__ (e.g., ResNet): deeper architectures are capable of capturing more complex features and patterns, potentially leading to enhanced accuracy
 
 
-## CI/CD Deployment plan
+## CI/CD Deployment plan and Database
 
 Find attached in [MLOps & Database README file](https://github.com/AlbertoUAH/Zalando/blob/main/MLOps%20%26%20Database.md)
-
-## SQL Relational Database
-
-Let’s imagine that now you have to load the product images from our database along with some additional text features like the product description provided by the retailers. The data is stored in an SQL relational database (postgresql) with the following schema:
-
-<p align="center">
-         <img width="450" src="./media/sql_database_schema.png">
-</p>
-
-Write a query (either in django ORM or in SQL) to extract, for every existing product, the following fields:
-* Product. Title
-* Image. Url for the images with the ImageIndex = 0. _ImageIndex field states the priority order of images of a certain product. So for a given ProductId, the image with ImageIndex = 0 would be the most relevant image for that product_
-* ProductDescription. TranslatedText if exists, else ProductDescription.OriginalText for ProductDescriptions in CountryCode = ‘us’
-
-```
-SELECT Product.Title AS ProductTitle,
-       Image.Url AS ImageURL,
-       CASE
-         WHEN ProductDescription.TranslatedText IS NOT NULL THEN ProductDescription.TranslatedText
-         ELSE ProductDescription.OriginalText
-       END AS ProductDescriptionText
-FROM Product LEFT JOIN ProductImages ON Product.Id = ProductImages.ProductId
-             LEFT JOIN ProductDescription ON Product.Id = ProductDescription.Id
-             LEFT JOIN Image ON Product.Id = Image.Id
-WHERE ProductImages.ImageIndex = 0
-```
 
 ## References
 

@@ -198,13 +198,14 @@ Evaluating resource consumption metrics is essential for optimizing hardware res
 
 ## Conclusions
 
-Based on previous metrics, if the main goal is to correctly classify all groups at any cost, regardless the model size or its complexity, __MobileNetV2 baseline (no img aug) - non frozen layers__ is the best option. Specifically, this model achieve good results with "One Piece" group, increasing its precision to 86 % on test set.
+Based on the previous metrics, the "MobileNetV2 baseline (no img aug) - non frozen layers" and "SqueezeNet1.1 baseline (no img aug) - non frozen layers" models are the two potential candidates to be employed in a production environment. While both models achieve excellent results, MobileNetV2 slightly outperforms in the case of the "One Piece" label. __If the goal is to maximize correct classification, regardless of model size or complexity, MobileNetV2 is the preferred choice.__ Additionally, 
 
 ## Future lines of research
 
 1. __Review "One Piece" Mispredictions__
-2. __Create a Custom Convolutional Model__: it provides flexibility and control over the model's architecture
-3. __Use Deeper Approaches__ (e.g., ResNet): deeper architectures are capable of capturing more complex features and patterns, potentially leading to enhanced accuracy
+2. __Finetune SqueezeNet1_1 with data augmentation techniques__
+3. __Create a Custom Convolutional Model__: it provides flexibility and control over the model's architecture
+4. __Use Deeper Approaches__ (e.g., ResNet): deeper architectures are capable of capturing more complex features and patterns, potentially leading to enhanced accuracy
 
 
 ## CI/CD Deployment plan and Database

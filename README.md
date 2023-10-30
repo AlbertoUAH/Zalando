@@ -205,9 +205,10 @@ Based on the previous metrics, the "MobileNetV2 baseline (no img aug) - non froz
 ## Future lines of research
 
 1. __Review "One Piece" Mispredictions__
-2. __Finetune SqueezeNet1_1 with data augmentation techniques__
-3. __Create a Custom Convolutional Model__: it provides flexibility and control over the model's architecture
-4. __Use Deeper Approaches__ (e.g., ResNet18): deeper architectures are capable of capturing more complex features and patterns, potentially leading to enhanced accuracy
+2. __Implement a GradCAM solution to analyse errors in detail__. [Source](https://medium.com/@stepanulyanin/implementing-grad-cam-in-pytorch-ea0937c31e82)
+3. __Finetune SqueezeNet1_1 with data augmentation techniques__
+4. __Create a Custom Convolutional Model__: it provides flexibility and control over the model's architecture
+5. __Use Deeper Approaches__ (e.g., ResNet18): deeper architectures are capable of capturing more complex features and patterns, potentially leading to enhanced accuracy
 
 
 ## CI/CD Deployment plan and Database

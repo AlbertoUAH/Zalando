@@ -207,7 +207,7 @@ Based on the previous metrics, the "MobileNetV2 baseline (no img aug) - non froz
 1. __Review "One Piece" Mispredictions__
 2. __Finetune SqueezeNet1_1 with data augmentation techniques__
 3. __Create a Custom Convolutional Model__: it provides flexibility and control over the model's architecture
-4. __Use Deeper Approaches__ (e.g., ResNet): deeper architectures are capable of capturing more complex features and patterns, potentially leading to enhanced accuracy
+4. __Use Deeper Approaches__ (e.g., ResNet18): deeper architectures are capable of capturing more complex features and patterns, potentially leading to enhanced accuracy
 
 
 ## CI/CD Deployment plan and Database

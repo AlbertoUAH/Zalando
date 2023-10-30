@@ -4,6 +4,8 @@
          <img width="450" src="media/mlops-schema.png">
 </p>
 
+NOTE: THe deployment plan has been developed for an AWS solution.
+
 <p align="center">
          <img src="media/AWS_drawio_mlops.png">
 </p>

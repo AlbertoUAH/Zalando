@@ -200,7 +200,7 @@ Evaluating resource consumption metrics is essential for optimizing hardware res
 
 ## Conclusions
 
-Based on the previous metrics, the "MobileNetV2 baseline (no img aug) - non frozen layers" and "SqueezeNet1.1 baseline (no img aug) - non frozen layers" models are the two potential candidates to be employed in a production environment. While both models achieve excellent results, MobileNetV2 slightly outperforms in the case of the "One Piece" label. __If the goal is to maximize correct classification, regardless of model size or complexity, MobileNetV2 is the preferred choice.__ Additionally, 
+Based on the previous metrics, the "MobileNetV2 baseline (no img aug) - non frozen layers" and "SqueezeNet1.1 baseline (no img aug) - non frozen layers" models are the two potential candidates to be employed in a production environment. While both models achieve excellent results, MobileNetV2 slightly outperforms in the case of the "One Piece" label. __If the goal is to maximize correct classification, regardless of model size or complexity, MobileNetV2 is the preferred choice.__
 
 ## Future lines of research
 
@@ -208,7 +208,7 @@ Based on the previous metrics, the "MobileNetV2 baseline (no img aug) - non froz
 2. __Implement a GradCAM solution to analyse errors in detail__. [Source](https://medium.com/@stepanulyanin/implementing-grad-cam-in-pytorch-ea0937c31e82)
 3. __Finetune SqueezeNet1_1 with data augmentation techniques__
 4. __Create a Custom Convolutional Model__: it provides flexibility and control over the model's architecture
-5. __Use Deeper Approaches__ (e.g., ResNet18): deeper architectures are capable of capturing more complex features and patterns, potentially leading to enhanced accuracy
+5. __Use Deeper Approaches__ (e.g., ResNet18): deeper architectures are capable of capturing more complex features and patterns, potentially leading to enhanced accuracy. With this architecture, Resource Consumption Metrics can be useful to determine whether this model performs better or not.
 
 
 ## CI/CD Deployment plan and Database

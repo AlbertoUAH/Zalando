@@ -223,4 +223,5 @@ Find attached in [MLOps & Database README file](https://github.com/AlbertoUAH/Za
 * [Torchvision: transforms](https://pytorch.org/vision/0.9/transforms.html)
 * [Image examples with Shap library](https://shap.readthedocs.io/en/latest/image_examples.html)
 * [CodeCarbon: Track and reduce CO2 emissions from your computing](https://codecarbon.io/)
+* [AWS Documentation](https://docs.aws.amazon.com/)
 

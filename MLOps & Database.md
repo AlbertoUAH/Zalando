@@ -33,7 +33,7 @@ Once the new model is registered, it is commited (approval required) and built t
 
 ## 5. Save outputs
 
-After deploying the new version, predicted images are classified and propertly stored into each folder, one for each class.
+After deploying the new version, predicted images are classified and propertly stored into each folder, one for each class. In case real labels were available from "Image Folder" bucket, a Lambda function is triggered to filter those images to "Training and test folders" S3 bucket (for future re-trainings).
 
 ## 6. KPI Visualization and drift alert
 

@@ -4,6 +4,10 @@
          <img width="450" src="media/mlops-schema.png">
 </p>
 
+<p align="center">
+         <img src="media/AWS_drawio_mlops.png">
+</p>
+
 ## 1. Input Validation workflow
 
 The process starts with the raw image data being stored in an S3 bucket. The data is then processed by a step function that checks the image format and other possible errors, via Lambda function. If there are no errors, the images are stored in a new S3 bucket. If there are errors, the images are stored in an S3 error folder. All the process is orchestrated by AWS Step Functions module.

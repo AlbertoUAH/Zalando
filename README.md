@@ -178,12 +178,13 @@ These performance metrics help determine whether the model can be deployed in ba
 * **Number of Parameters**
 * **Model Size** (MB)
 * **Inference Time** on test set
+* **Overfitting?**
 
-|                  | number of parameters | model size (MB) | test inference time (seconds) |
-|------------------|-------|-----------|--------------------------|
-| MobilenetV2 - baseline | 2230277 | 8.8 MB | 37.6 sec |
-| MobilenetV2 - baseline - no frozen layers | 2230277 | 8.8 MB | 37.3 sec |
-| SqueezeNet1.1 baseline (no img aug) - non frozen layers | 855109 | 3.3 MB | 35.7 sec |
+|                  | number of parameters | model size (MB) | test inference time (seconds) | overfitting |
+|------------------|-------|-----------|--------------------------|-------|
+| MobilenetV2 - baseline | 2230277 | 8.8 MB | 37.6 sec |No|
+| MobilenetV2 - baseline - no frozen layers | 2230277 | 8.8 MB | 37.3 sec |No|
+| SqueezeNet1.1 baseline (no img aug) - non frozen layers | 855109 | 3.3 MB | 35.7 sec |No|
 
 ### Resource Consumption Metrics
 
@@ -209,6 +210,7 @@ Based on the previous metrics, the "MobileNetV2 baseline (no img aug) - non froz
 3. __Finetune SqueezeNet1_1 with data augmentation techniques__
 4. __Create a Custom Convolutional Model__: it provides flexibility and control over the model's architecture
 5. __Use Deeper Approaches__ (e.g., ResNet18): deeper architectures are capable of capturing more complex features and patterns, potentially leading to enhanced accuracy. With this architecture, Resource Consumption Metrics can be useful to determine whether this model performs better or not.
+6. __Combine metada features from Database to implement a hybrid solution: mixing images with tabular data__
 
 
 ## CI/CD Deployment plan and Database

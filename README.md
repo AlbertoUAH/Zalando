@@ -39,9 +39,11 @@ The original Zalando dataset contains 10 different labels:
 
 In this case, I want to group the original labels in 5 new labels with the following mapping between them:
 
-* __Upper part__: T-shirt/top + Pullover + Coat + Shirt Bottom part: Trouser
+* __Upper part__: T-shirt/top + Pullover + Coat + Shirt
+* __Bottom part__: Trouser
 * __One piece__: Dress
-* __Footwear__: Sandal + Sneaker + Ankle boot Bags: Bag
+* __Footwear__: Sandal + Sneaker + Ankle boot
+* __Bags__: Bag
 
 
 The goal of this exercise is to understand the dataset and experiment with deep learning techniques to train a classifier for the given grouped classes (Upper part, Bottom Part, One piece, Footwear and Bags).

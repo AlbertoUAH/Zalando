@@ -57,7 +57,7 @@ Write a query (either in django ORM or in SQL) to extract, for every existing pr
 SELECT
     p.Title AS Product_Title,
     i.Url AS Image_Url,
-    COALESCE(pd_description.TranslatedText, pd_original.OriginalText) AS Product_Description
+    COALESCE(pd_description.TranslatedText, pd_description.OriginalText) AS Product_Description
 FROM Product p
 LEFT JOIN ProductImages pr ON p.id = pr.ProductId
 LEFT JOIN Image i ON pr.ImageId = i.Id
